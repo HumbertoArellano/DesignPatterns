@@ -1,3 +1,6 @@
+import com.arellano.designpatterns.liskovandsegregation.IFelino;
+import com.arellano.designpatterns.liskovandsegregation.IFelinoSalvaje;
+import com.arellano.designpatterns.liskovandsegregation.Jaguar;
 import com.arellano.designpatterns.openclose.Caballos;
 import com.arellano.designpatterns.openclose.Dog;
 import com.arellano.presentation.Presentation;
@@ -5,11 +8,8 @@ import com.arellano.presentation.PresentationOpenClose;
 
 public class Main {
     public static void main(String[] args) {
-        Dog doberman = new Dog("Doberman", 2, 4, 230f);
-        Caballos horse = new Caballos(4, 230f);
-
-        PresentationOpenClose presentationOpenClose = new PresentationOpenClose();
-        presentationOpenClose.comidaPorDepartamentoDeLaGranja(doberman);
-        presentationOpenClose.comidaPorDepartamentoDeLaGranja(doberman);
+        Jaguar jaguar = new Jaguar(23, "Sabana");
+        IFelino jaguar2 = new Jaguar(23, "Sabana");
+        IFelinoSalvaje jaguar3 = new Jaguar(23, "Sabana");
     }
 }
